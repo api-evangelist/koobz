@@ -1,0 +1,33 @@
+generated: '2026-07-19'
+method: searched
+source: https://koo.bz/
+host: https://koo.bz
+notes: >-
+  Koobz publishes no /.well-known/ discovery surface. Every RFC-defined document probed returned
+  404. The host sits behind a Cloudflare interactive bot challenge that answers HTML paths with a
+  403 "Just a moment..." interstitial, so 403 below means "challenged, not served" rather than a
+  true authorization failure. Notably /robots.txt (200) explicitly Allow:s GPTBot, ChatGPT-User,
+  PerplexityBot, ClaudeBot, Claude-Web and Google-Extended, which the WAF configuration then
+  contradicts by challenging those same agents.
+documents:
+- path: /.well-known/security.txt
+  status: 404
+- path: /.well-known/openid-configuration
+  status: 404
+- path: /.well-known/oauth-authorization-server
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404
+- path: /llms.txt
+  status: 404
+- path: /robots.txt
+  status: 200
+  note: AI crawlers explicitly invited
+- path: /openapi.json
+  status: 403
+  note: Cloudflare challenge interstitial, not a served document
+- path: /sitemap.xml
+  status: 403
+  note: Cloudflare challenge interstitial; a sitemap was served historically

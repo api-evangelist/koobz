@@ -1,0 +1,48 @@
+# Koobz
+
+> Koobz is a Ventura, California additive-manufacturing company that 3D-prints footwear on demand.
+> Its mono-material, circular-ready foamed-TPU shoes are printed only after a consumer orders,
+> giving brands zero inventory, no minimum order quantities, and 4-6 week concept-to-market cycles.
+> Koobz describes its factory as API-driven — brand storefront orders and personalization specs
+> sync to the factory, which prints in Ventura and dropships to the customer — but it publishes no
+> public developer portal, API documentation, or machine-readable API definition. Integration runs
+> through its partner channel. Backed by $7.2M in funding, including Uncork Capital.
+
+## Company
+
+- [Koobz](https://koo.bz/): Home — the on-demand 3D-printed footwear platform and the four-step order-to-dropship flow.
+- [About Us](https://koo.bz/about): Origin, thesis on breaking 18-month development cycles and overseas tooling, funding and press.
+- [Technology](https://koo.bz/technology): KoobzWeave toolpath-as-textile upper pattern engine, performance validation, materials compliance (REACH, RoHS, RSL, ISO colorfastness).
+- [Sustainability](https://koo.bz/sustainability): Zero-overproduction make-to-order model and mono-material architecture for EPR regimes such as California SB 707.
+- [Team](https://koo.bz/team): Kuba Graczyk (CEO & Co-Founder), Micheal Hofmann (CBDO), Tomasz Cieszynski (CTO), John Dulchinos (COO).
+- [Contact / Partner With Us](https://koo.bz/contact): The partner and integration intake channel.
+
+## APIs
+
+No public API. Koobz markets an "API sync" between a brand's storefront and the Koobz factory, but
+as of 2026-07-19 there is no developer portal, API reference, OpenAPI/AsyncAPI definition, SDK,
+CLI, MCP server, sandbox, or public package on npm, PyPI, RubyGems, Packagist or crates.io.
+Prospective integrators go through https://koo.bz/contact.
+
+## Artifacts
+
+- [APIs.json](https://raw.githubusercontent.com/api-evangelist/koobz/refs/heads/main/apis.yml): API Evangelist profile for Koobz.
+- [Well-known probe](https://raw.githubusercontent.com/api-evangelist/koobz/refs/heads/main/well-known/koobz-well-known.yml): No /.well-known/ discovery surface; all documents 404.
+- [Domain security](https://raw.githubusercontent.com/api-evangelist/koobz/refs/heads/main/security/koobz-domain-security.yml): TLSv1.3, HSTS one year, CAA set, SPF and DMARC p=reject, no DNSSEC.
+
+## Policies
+
+- [Terms of Use](https://koo.bz/terms)
+- [Privacy Policy](https://koo.bz/privacy)
+
+## Elsewhere
+
+- [LinkedIn](https://www.linkedin.com/company/koobz)
+- [Instagram](https://www.instagram.com/thekoobz/)
+
+## Notes for agents
+
+Koobz's /robots.txt explicitly invites GPTBot, ChatGPT-User, PerplexityBot, ClaudeBot, Claude-Web
+and Google-Extended, but the site sits behind a Cloudflare interactive challenge that returns a 403
+interstitial to those same agents. Automated retrieval of koo.bz HTML will fail despite the stated
+crawl permission.
