@@ -1,22 +1,99 @@
 aid: koobz
 name: Koobz
-description: Koobz is a company surfaced as a portfolio company of uncork-capital and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: 'Koobz is a Ventura, California additive-manufacturing company rebuilding the footwear
+  supply chain around on-demand 3D printing. Its "gigafactory" prints circular-ready, mono-material
+  foamed-TPU shoes to order, so brands carry zero inventory and face no minimum order quantities:
+  a consumer buys on the brand''s own storefront, the order and personalization specs sync to the
+  Koobz factory, the shoe is printed in Ventura and dropshipped direct to the customer in days.
+  The company markets 10x faster concept-to-market cycles (4-6 weeks, no tooling), custom
+  cushioning and foot-scanning personalization, and a KoobzWeave toolpath-as-textile upper pattern
+  engine. Its mono-material architecture is positioned for Extended Producer Responsibility regimes
+  such as California SB 707, since a single-polymer shoe yields premium TPU on take-back rather than
+  mixed waste. Koobz has raised $7.2M and is backed by Uncork Capital. It describes its factory as
+  API-driven and its order intake as an API sync from brand storefronts, but as of this profile it
+  publishes no public developer portal, API documentation, or machine-readable API definition;
+  integration appears to run through its partner ("Partner With Us") channel.'
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://koo.bz/Logo/PNG/favicon.png
 url: https://raw.githubusercontent.com/api-evangelist/koobz/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - uncork-capital
 x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier-reason: no-public-api
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Footwear
+- 3D Printing
+- Additive Manufacturing
+- Manufacturing
+- Supply Chain
+- Sustainability
+- On Demand Manufacturing
+- Dropshipping
+- Circular Economy
 apis: []
+common:
+- type: Website
+  name: Koobz
+  url: https://koo.bz/
+- type: About
+  name: About Koobz
+  url: https://koo.bz/about
+- type: Technology
+  name: KoobzWeave technology
+  url: https://koo.bz/technology
+- type: Sustainability
+  name: Sustainability and EPR compliance
+  url: https://koo.bz/sustainability
+- type: Team
+  name: Team
+  url: https://koo.bz/team
+- type: Support
+  name: Contact / Partner With Us
+  url: https://koo.bz/contact
+- type: TermsOfService
+  name: Terms of Use
+  url: https://koo.bz/terms
+- type: PrivacyPolicy
+  name: Privacy Policy
+  url: https://koo.bz/privacy
+- type: LinkedIn
+  name: Koobz on LinkedIn
+  url: https://www.linkedin.com/company/koobz
+- type: Instagram
+  name: Koobz on Instagram
+  url: https://www.instagram.com/thekoobz/
+- type: WellKnown
+  name: Well-known discovery probe
+  url: well-known/koobz-well-known.yml
+- type: DomainSecurity
+  name: Domain security posture
+  url: security/koobz-domain-security.yml
+- type: LLMsTxt
+  name: llms.txt
+  url: llms/koobz-llms.txt
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
