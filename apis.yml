@@ -13,6 +13,17 @@ description: 'Koobz is a Ventura, California additive-manufacturing company rebu
   API-driven and its order intake as an API sync from brand storefronts, but as of this profile it
   publishes no public developer portal, API documentation, or machine-readable API definition;
   integration appears to run through its partner ("Partner With Us") channel.'
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: unknown
