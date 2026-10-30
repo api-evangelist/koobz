@@ -64,31 +64,82 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Koobz is a Ventura, California additive-manufacturing company rebuilding the footwear supply chain
-around on-demand 3D printing. Its factory prints circular-ready, mono-material foamed-TPU shoes to
-order, so brands carry zero inventory and face no minimum order quantities: a consumer buys on the
-brand's own storefront, the order and personalization specs sync to the Koobz factory, and the shoe
-is printed in Ventura and dropshipped to the customer in days.
+Koobz is a Ventura, California additive-manufacturing company rebuilding the footwear supply chain around on-demand 3D printing. Its "gigafactory" prints circular-ready, mono-material foamed-TPU shoes to order, so brands carry zero inventory and face no minimum order quantities: a consumer buys on the brand's own storefront, the order and personalization specs sync to the Koobz factory, the shoe is printed in Ventura and dropshipped direct to the customer in days. The company markets 10x faster concept-to-market cycles (4-6 weeks, no tooling), custom cushioning and foot-scanning personalization, and a KoobzWeave toolpath-as-textile upper pattern engine. Its mono-material architecture is positioned for Extended Producer Responsibility regimes such as California SB 707, since a single-polymer shoe yields premium TPU on take-back rather than mixed waste. Koobz has raised $7.2M and is backed by Uncork Capital. It describes its factory as API-driven and its order intake as an API sync from brand storefronts, but as of this profile it publishes no public developer portal, API documentation, or machine-readable API definition; integration appears to run through its partner ("Partner With Us") channel.
 
-Koobz markets 10x faster concept-to-market cycles (4-6 weeks, no tooling), foot-scanning and
-cushioning personalization, and the KoobzWeave upper pattern engine. Its mono-material architecture
-is positioned for Extended Producer Responsibility regimes such as California SB 707. The company
-has raised $7.2M and is backed by Uncork Capital.
+**Areas:** Company · Footwear · 3D Printing · Manufacturing · Supply Chain · Sustainability · On-Demand Manufacturing · Dropshipping · Circular Economy
 
-## API status
+## Koobz on APIs.io
 
-Koobz describes its factory as API-driven and its order intake as an "API sync" from brand
-storefronts, but publishes **no public API surface** as of 2026-07-19: no developer portal, API
-reference, OpenAPI/AsyncAPI definition, SDK, CLI, MCP server, sandbox, or first-party package on
-npm, PyPI, RubyGems, Packagist or crates.io. Integration runs through the partner channel at
-<https://koo.bz/contact>. This profile therefore carries identity and probe artifacts only.
+Everything profiled for Koobz is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/koobz/](https://apis.io/providers/koobz/)** — or go straight to one of the APIs or properties below.
 
-## Artifacts
+### Published properties
 
-| Artifact | File |
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Koobz Domain Security](https://apis.io/security/koobz/koobz-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://koo.bz/)
+- [Support](https://koo.bz/contact)
+- [Terms of service](https://koo.bz/terms)
+- [Privacy policy](https://koo.bz/privacy)
+
+## API Evangelist rating
+
+**Kin Score 10.5** — minimal · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
 |---|---|
-| Well-known discovery probe | `well-known/koobz-well-known.yml` |
-| Domain security posture | `security/koobz-domain-security.yml` |
-| llms.txt | `llms/koobz-llms.txt` |
+| Discoverability | 55.4 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 4.8 |
+| Access clarity | 21.1 |
 
-Backed by: uncork-capital
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 13.7** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/koobz/](https://apis.io/providers/koobz/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Koobz: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/koobz/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
